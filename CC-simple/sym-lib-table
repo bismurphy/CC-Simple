@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name openlst-hw1)(type Legacy)(uri /home/joey/git-repos/openlst-hw/openlst-hw.lib)(options "")(descr ""))
+)

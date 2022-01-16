@@ -1,0 +1,16 @@
+The 3v3_FILT rail powers many pins on the CC1110. This rail has 8 capacitors on it, many of which are bypass caps on particular pins.
+Here is a list of how they exist on the OpenLST:
+
+C1: 0.1 uF, bypass on pin 10 (DVDD)
+C2: 220pF, bypass on pins 25 and 26 (AVDD)
+C3: 0.1 uF, bypass on pin 28 (GUARD)
+C5: 0.1 uF, bypass on pin 29 (AVDD_DREG)
+C7: 220 pF, bypass on pin 19 (AVDD)
+C10: 0.1 uF, bypass on pin 2 (DVDD)
+
+C47: 1 uF, main supply filtering
+C9: 1 uF, main supply filtering.
+
+The AVDD pins (25+26, 19) got the lower 220 pF capacitance. This actually matches the TI Reference Design.
+
+I'm really not using the analog pins, so I'm going to change all those caps to 0.1 uF 0603's.m
